@@ -33,7 +33,7 @@
 }
 
 .content-section {
-  inline-size: min(var(--min-width), var(--max-width));
+  inline-size: min(100vi, 700px);
 }
 
 .header {
@@ -161,7 +161,6 @@
   inset-inline-end: 13px;
   font-family: var(--accent-font);
   font-size: var(--additional-font-size);
-  text-transform: uppercase;
   opacity: 0.5;
   text-shadow: -1px 0 0 var(--stroke-color),
                 1px 0 0 var(--stroke-color),
@@ -170,10 +169,9 @@
   mix-blend-mode: hard-light;
 }
 
-@supports((text-stroke: 1px var(--stroke-color)) or (-webkit-text-stroke: 1px var(--stroke-color))) {
+@supports((-webkit-text-stroke: 1px var(--stroke-color))) {
   .cards__picture-text {
     -webkit-text-stroke: 1px var(--background-color);
-    text-stroke: 1px var(--background-color);
     text-shadow: none;
   }
 }
@@ -295,8 +293,14 @@
   transition: box-shadow 0.3s ease;
 }
 
-.card__like-button:hover::after {
-  transform: scaleX(1);
+/*Медиазапрос, направленный на выявление устройств с сенсорным экраном.
+  Без него на мобильных устройствах при клике кнопки необратимо меняют цвет
+  на противоположный*/
+
+@media (hover: hover) and (pointer: fine) {
+  .card__like-button:hover::after {
+    transform: scaleX(1);
+  }
 }
 
 .button__text {
@@ -410,4 +414,40 @@
   background-color: var(--background-color);
   border: 2px solid var(--text-color);
   cursor: pointer;
+ }
+
+ /*Фильтры для изображений*/
+
+ .blur {
+  filter: blur(8px);
+ }
+
+ .brightness {
+  filter: brightness(0.2);
+ }
+
+ .invert {
+  filter: invert(100%);
+ }
+
+ .multi {
+  filter: saturate(350%) drop-shadow(0 10px 10px var(--text-color));
+ }
+
+ .saturate {
+  filter: saturate(300%);
+ }
+
+ .drop-shadow {
+  filter: drop-shadow(0 5px 10px var(--text-color));
+ }
+
+ .hue {
+  filter:hue-rotate(45deg);
+ }
+
+ @media (width <= 375px) {
+  .header__logo {
+    font-size: clamp(2.625rem, 0.0795rem + 12.7273vw, 3.0625rem);
+  }
  }
