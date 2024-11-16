@@ -354,3 +354,60 @@
   color: var(--button-text-color);
   mix-blend-mode: difference;
 }
+
+.dialog:not([open]) {
+  pointer-events: none;
+}
+
+.dialog:is([open]) {
+  inline-size: clamp(341px, 50%, 353px);
+  padding: 30px 36px;
+  border: 2px solid var(--text-color);
+ }
+
+ @media (min-width: 1440px) {
+  .dialog:is([open]) {
+    padding: 30px 28px;
+  }
+ }
+
+ .dialog::backdrop {
+  background: var(--backdrop-color);
+ }
+
+.dialog__form {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: min-content min-content;
+  column-gap: 20px;
+  row-gap: 30px;
+}
+
+.dialog__form-image {
+  grid-column: 1/2;
+  inline-size: 39px;
+  block-size: auto;
+  align-self: center;
+  color: var(--text-color);
+ }
+
+.dialog__form-text {
+  grid-column: 2/3;
+  font-family: var(--accent-font);
+  font-size: var(--additional-font-size);
+  text-transform: lowercase;
+  line-height: 150%;
+  color: var(--text-color);
+ }
+
+ .dialog__form-button {
+  grid-column: 1/3;
+  inline-size: 100%;
+  padding: 9px 0;
+  font-size: var(--additional-font-size);
+  font-weight: 400;
+  line-height: 90%;
+  background-color: var(--background-color);
+  border: 2px solid var(--text-color);
+  cursor: pointer;
+ }

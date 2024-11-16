@@ -11,6 +11,7 @@
   --button-text-color: var(--text-color);
   --heart-contour-color: var(--text-color);
   --heart-sparks-color: #ff0000;
+  --backdrop-color: rgba(0, 0, 0, 0.75);
   --font-weight-main: 465;
   --font-weight-title: 785;
   --background-image: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
@@ -25,6 +26,7 @@
   --button-text-color: var(--background-color);
   --heart-contour-color: var(--text-color);
   --heart-sparks-color: #ff0000;
+  --backdrop-color: rgba(0, 0, 0, 0.75);
   --font-weight-main: 400;
   --font-weight-title: 700;
   --background-image: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
@@ -40,6 +42,7 @@
     --button-text-color: var(--text-color);
     --heart-contour-color: var(--text-color);
     --heart-sparks-color: #ff0000;
+    --backdrop-color: rgba(0, 0, 0, 0.75);
     --font-weight-main: 465;
     --font-weight-title: 785;
     --background-image: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
