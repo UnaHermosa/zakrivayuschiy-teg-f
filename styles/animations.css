@@ -15,10 +15,56 @@
 
 @keyframes arrow {
   0% {
-    inset-inline-start: -16px0;
+    inset-inline-start: 0;
   }
 
   100% {
-    inset-inline-start: -20px;
+    inset-inline-start: -4px;
+  }
+}
+
+@keyframes core-coloring {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: var(--heart-sparks-color);
+  }
+}
+
+@keyframes main-body-coloring {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: var(--heart-sparks-color);
+  }
+}
+
+@keyframes contour-coloring {
+  0% {
+    fill: var(--heart-contour-color);
+  }
+  100% {
+    fill: var(--heart-sparks-color);
+  }
+}
+
+@keyframes heart-scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+    transform-origin: center;
+  }
+}
+
+@keyframes sparks {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

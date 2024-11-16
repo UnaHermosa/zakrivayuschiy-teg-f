@@ -8,6 +8,9 @@
   --background-color: #000;
   --text-color: #00cc14;
   --stroke-color: var(--background-color);
+  --button-text-color: var(--text-color);
+  --heart-contour-color: var(--text-color);
+  --heart-sparks-color: #ff0000;
   --font-weight-main: 465;
   --font-weight-title: 785;
   --background-image: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
@@ -19,6 +22,9 @@
   --background-color: #fff;
   --text-color: #000;
   --stroke-color: var(--background-color);
+  --button-text-color: var(--background-color);
+  --heart-contour-color: var(--text-color);
+  --heart-sparks-color: #ff0000;
   --font-weight-main: 400;
   --font-weight-title: 700;
   --background-image: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
@@ -31,6 +37,9 @@
     --background-color: #000;
     --text-color: #00cc14;
     --stroke-color: var(--background-color);
+    --button-text-color: var(--text-color);
+    --heart-contour-color: var(--text-color);
+    --heart-sparks-color: #ff0000;
     --font-weight-main: 465;
     --font-weight-title: 785;
     --background-image: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
