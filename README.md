@@ -8,4 +8,4 @@
 
 **Репозиторий** [https://github.com/UnaHermosa/zakrivayuschiy-teg-f.git]
 
-**Опубликовано на GitPages** []
+**Опубликовано на GitPages** [https://unahermosa.github.io/zakrivayuschiy-teg-f/]
