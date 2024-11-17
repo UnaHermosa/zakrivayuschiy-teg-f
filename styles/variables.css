@@ -12,10 +12,10 @@
 
   --background-color: #fff;
   --text-color: #000;
-  --stroke-color: var(--background-color);
-  --button-text-color: var(--background-color);
+  --stroke-color: var(--background-color, #fff);
+  --button-text-color: var(--background-color, #fff);
 
-  --heart-contour-color: var(--text-color);
+  --heart-contour-color: var(--text-color, #000);
   --heart-sparks-color: #ff0000;
 
   --backdrop-color: rgba(0, 0, 0, 0.75);

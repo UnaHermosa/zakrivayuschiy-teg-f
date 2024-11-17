@@ -15,11 +15,11 @@
 
 @keyframes arrow {
   0% {
-    inset-inline-start: 0;
+    inset-inline-start: -19px;
   }
 
   100% {
-    inset-inline-start: -4px;
+    inset-inline-start: -23px;
   }
 }
 
@@ -28,7 +28,7 @@
     fill: transparent;
   }
   100% {
-    fill: var(--heart-sparks-color);
+    fill: var(--heart-sparks-color, #ff0000);
   }
 }
 
@@ -37,22 +37,23 @@
     fill: transparent;
   }
   100% {
-    fill: var(--heart-sparks-color);
+    fill: var(--heart-sparks-color, #ff0000);
   }
 }
 
 @keyframes contour-coloring {
   0% {
-    fill: var(--heart-contour-color);
+    fill: var(--heart-contour-color, #000);
   }
   100% {
-    fill: var(--heart-sparks-color);
+    fill: var(--heart-sparks-color, #ff0000);
   }
 }
 
 @keyframes heart-scale {
   0% {
     transform: scale(1);
+    transform-origin: center;
   }
   100% {
     transform: scale(1.5);
